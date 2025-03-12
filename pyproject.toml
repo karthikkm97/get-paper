@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "get-paper"
-version = "0.1.0"
+version = "0.2.5"
 description = "Fetches research papers from PubMed and filters those with pharmaceutical or biotech affiliations."
 authors = ["karthikkm97 <kathum9739@gmail.com>"]
 readme = "README.md"
@@ -11,9 +11,9 @@ documentation = "https://github.com/karthikkm97/get-paper/blob/main/README.md"
 packages = [{ include = "get-papers-list", from = "src" }]
 
 [tool.poetry.dependencies]
-python = ">=3.9,<3.13"
+python = "^3.10.0"
 requests = "^2.32.3"
-pandas = "^2.2.3"
+pandas = "^2.2.1"
 
 [tool.poetry.dev-dependencies]
 pytest = "^8.1.1"
