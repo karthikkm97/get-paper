@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "get-paper"
-version = "0.2.5"
+version = "0.2.6"
 description = "Fetches research papers from PubMed and filters those with pharmaceutical or biotech affiliations."
 authors = ["karthikkm97 <kathum9739@gmail.com>"]
 readme = "README.md"
@@ -19,7 +19,7 @@ pandas = "^2.2.1"
 pytest = "^8.1.1"
 
 [tool.poetry.scripts]
-get-papers-list = "cli:main" 
+get-papers-list = "get_paper.cli:main"
 
 
 
