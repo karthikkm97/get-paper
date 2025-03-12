@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "get-paper"
-version = "0.2.6"
+version = "0.3.0"
 description = "Fetches research papers from PubMed and filters those with pharmaceutical or biotech affiliations."
 authors = ["karthikkm97 <kathum9739@gmail.com>"]
 readme = "README.md"
@@ -8,20 +8,18 @@ license = "MIT"
 repository = "https://github.com/karthikkm97/get-paper"
 homepage = "https://test.pypi.org/project/get-paper"
 documentation = "https://github.com/karthikkm97/get-paper/blob/main/README.md"
-packages = [{ include = "get-papers-list", from = "src" }]
+packages = [{ include = "paper" }]
 
 [tool.poetry.dependencies]
 python = "^3.10.0"
 requests = "^2.32.3"
 pandas = "^2.2.1"
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies] 
 pytest = "^8.1.1"
 
 [tool.poetry.scripts]
-get-papers-list = "get_paper.cli:main"
-
-
+get-papers-list = "scripts.cli:main" 
 
 [build-system]
 requires = ["poetry-core>=2.0.0"]

@@ -1,6 +1,9 @@
 import argparse
-from pubmed_fetcher.fetch import fetch_pubmed_papers
-from pubmed_fetcher.utils import save_to_csv
+from  paper.fetch import fetch_pubmed_papers
+from  paper.utils import save_to_csv
+
+
+
 
 def main():
     parser = argparse.ArgumentParser(description="Fetch research papers from PubMed")
