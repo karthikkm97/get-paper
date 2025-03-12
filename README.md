@@ -12,7 +12,7 @@ This tool fetches research papers from PubMed based on a query and identifies pa
 ## Usage
 Run the command:
 
-poetry run get-papers-list "COVID-19" --file results.csv
+poetry run get-paper-list "COVID-19" --file results.csv
 
 
 ## Options

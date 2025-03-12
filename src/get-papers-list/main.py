@@ -1,5 +1,5 @@
 def main():
-    print("Hello from get-paper!")
+    print("Fetching research papers...!")
 
 if __name__ == "__main__":
     main()

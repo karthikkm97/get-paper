@@ -8,10 +8,10 @@ license = "MIT"
 repository = "https://github.com/karthikkm97/get-paper"
 homepage = "https://test.pypi.org/project/get-paper"
 documentation = "https://github.com/karthikkm97/get-paper/blob/main/README.md"
-packages = [{ include = "get_paper", from = "src" }]
+packages = [{ include = "get-papers-list", from = "src" }]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"
+python = ">=3.9,<3.13"
 requests = "^2.32.3"
 pandas = "^2.2.3"
 
@@ -19,7 +19,7 @@ pandas = "^2.2.3"
 pytest = "^8.1.1"
 
 [tool.poetry.scripts]
-get-paper = "get_paper.main:main"  # Ensure this points to the correct entry point
+get-papers-list = "cli:main" 
 
 
 
