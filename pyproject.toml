@@ -2,26 +2,26 @@
 name = "get-paper"
 version = "0.1.0"
 description = "Fetches research papers from PubMed and filters those with pharmaceutical or biotech affiliations."
-authors = [{name = "karthikkm97", email = "kathum9739@gmail.com"}]
+authors = ["karthikkm97 <kathum9739@gmail.com>"]
 readme = "README.md"
 license = "MIT"
-repository = "https://github.com/karthikkm97/get-paper"  # Replace with your actual GitHub repo
-homepage = "https://test.pypi.org/project/get-paper"  # This is the TestPyPI project page
+repository = "https://github.com/karthikkm97/get-paper"
+homepage = "https://test.pypi.org/project/get-paper"
 documentation = "https://github.com/karthikkm97/get-paper/blob/main/README.md"
+packages = [{ include = "get_paper", from = "src" }]
 
 [tool.poetry.dependencies]
-python = ">=3.8,<4.0"  # Ensuring compatibility with older Python versions
+python = ">=3.8,<4.0"
 requests = "^2.32.3"
 pandas = "^2.2.3"
 
 [tool.poetry.dev-dependencies]
-pytest = "^8.1.1"  # If you plan to add tests
+pytest = "^8.1.1"
 
 [tool.poetry.scripts]
-get-papers-list = "get_papers_list.main:main"
+get-paper = "get_paper.main:main"  # Ensure this points to the correct entry point
 
-[tool.poetry.package]
-include = ["src/get_papers_list"]
+
 
 [build-system]
 requires = ["poetry-core>=2.0.0"]
